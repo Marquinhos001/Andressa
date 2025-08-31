@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,7 +15,6 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-
 .container {
   text-align: center;
   padding: 20px;
@@ -18,6 +23,10 @@ body {
 h1 {
   font-size: 2.5rem;
   margin-top: 20px;
+}
+
+.right {
+  text-align: right;
 }
 
 .buttons {
@@ -109,7 +118,21 @@ h2, .love-letter p {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsivo */
+.credit{
+  font-size: 10px;
+}
+.instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 10px;
+  gap: 5px;
+  color:#ff1493;
+  flex-direction: row-reverse;
+}
+
+/*responsiveness*/
 @media (max-width: 600px) {
   h1 {
     font-size: 1.8rem;
